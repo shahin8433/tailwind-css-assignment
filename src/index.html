@@ -4,11 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <div class="container mx-auto bg-gray-50">
-      <nav class="flex justify-between my-3 text-[#636270]">
+    <div class="container mx-auto bg-gray-50 ">
+      <header>
+        <div class="flex justify-between items-center bg-[#F0F2F3] py-[20px] px-10">
+          <div><img src="./img/Logo (8).png" alt="image"></div>
+          <div class="relative">
+            <input class="p-[13px] rounded-md w-[413px]" type="text" name="" id="" placeholder="search here...">
+            <i class="fa-solid fa-magnifying-glass absolute top-1/2 right-4 translate-y-[-50%]"></i>
+          </div>
+          <div class="flex gap-x-5 items-center">
+            <div class="flex gap-x-2 items-center bg-white py-3 px-4 rounded-lg">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Cart</p>
+              <p>2</p>
+            </div>
+            <div><i class="fa-regular fa-heart bg-white p-4 rounded-lg"></i></div>
+            <div><i class="fa-regular fa-user  bg-white p-4 rounded-lg"></i></div>
+          </div>
+        </div>
+      </header>
+      <nav class="flex justify-between my-3 text-[#636270] px-10">
                     <ul class="flex space-x-3 items-center ">
                                         <button class="border py-1 px-2">All Categories</button>
                                         <li class="text-[#007580]">Home</li>
@@ -303,10 +322,10 @@
               <label for="check">
                 <input type="checkbox" name="check" id="check"> Remember me
             </label>
-            <p class="text-[#029FAE]">Forget Password</p>
+            <p class="text-[#029FAE] cursor-pointer">Forget Password</p>
           </div>
           <button class="w-full bg-[#029FAE] py-[14px] my-5 rounded-[8px] text-white">Sign In</button>
-          <p class="text-center">Don’t have account? <span class="text-[#029FAE]"> Sign Up</span></p>
+          <p class="text-center cursor-pointer">Don’t have account? <span class="text-[#029FAE] "> Sign Up</span></p>
           </div>
         </form>
         <!-- FOOTER -->
