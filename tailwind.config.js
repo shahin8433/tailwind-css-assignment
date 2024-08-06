@@ -13,7 +13,7 @@ module.exports = {
         light:"#FFF",
         black:"#000",
         dark:"#272343",
-        danger:"#01AD5A"
+        danger:"#01AD5A",
       },
       fontFamily:{
         inter:["Inter",'sans-serif']

@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.grid-4 {
-                   @apply grid grid-cols-4 justify-between gap-6
-}
-
-.new{
-                    @apply bg-danger absolute top-5 left-5 text-light py-1.5 px-2.5  rounded-md
+@layer base {
+                    .grid-4 {
+                                        @apply grid grid-cols-4 justify-between gap-6
+                     };
+                     
+                     .new{
+                                         @apply bg-danger absolute top-5 left-5 text-light py-1.5 px-2.5  rounded-md
+                     };
+                     .arow-container{
+                                    @apply    flex justify-between items-center
+                     };
+                     .arow-title{
+                                        @apply font-semibold text-3xl mb-8 text-dark
+                     }
 }
