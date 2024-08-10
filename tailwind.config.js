@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       container:{
         center: true,
-        padding: " 5.6rem"
+        padding: " 1.25rem"
       },
       colors:{
         primary:"#F0F2F3",

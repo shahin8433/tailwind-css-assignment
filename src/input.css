@@ -15,5 +15,8 @@
                      };
                      .arow-title{
                                         @apply font-semibold text-3xl mb-8 text-dark
+                     };
+                     .hover-btn{
+                                        @apply hover:bg-[#F5813F] transition-all duration-500 ease-in-out
                      }
 }

@@ -19,7 +19,7 @@
         <header>
           <div class="bg-primary w-full">
             <div
-              class="flex justify-between items-center py-[20px]  container"
+              class="flex flex-col md:flex-row justify-between items-center py-[20px] container "
             >
               <div><img src="./img/Logo (8).png" alt="logo" /></div>
               <div class="relative">
@@ -52,15 +52,17 @@
             </div>
           </div>
         </header>
-        <nav class="flex justify-between items-center my-3 container">
-          <ul class="flex gap-x-8 items-center text-sm">
-            <button class="flex gap-x-4 border py-4 px-6 rounded-lg bg-gray-50"> <img src="./img/icons/Menu.png" alt="menu"> <span>All Categories</span></button>
-            <li class="text-secondary"><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
+        <nav class="flex justify-between items-center my-3 container ">
+      <div class="flex gap-x-8 relative">
+        <button class="flex items-center gap-x-4 border py-2 px-3 md:py-4 md:px-6 rounded-lg bg-gray-50 "> <img class=" md:hidden" src="./img/icons/Menu.png" alt="menu"> <span class="whitespace-nowrap">All Categories</span></button>
+        <ul class="flex flex-col md:flex-row gap-x-8 items-center text-sm absolute md:static top-0 bg-red-200 w-full ">
+          <li class="text-secondary"><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
           <div>
             <p class=" text-sm">Contact: <span class="font-semibold text-sm">(808) 555-0111</span></p>
           </div>
@@ -73,7 +75,7 @@
             <div class="w-[631px]">
               <p class="text-sm uppercase text-dark font-normal">Welcome to chairy</p>
                       <h1 class="font-bold leading-[74px] text-dark text-[68px] ">Best Furniture Collection for your interior.</h1>
-                      <button class="bg-secondary text-light px-6 py-3 rounded-lg flex gap-x-5 mt-5"><span class="text-base font-semibold">Shop Now</span> <img src="./img/icons/Right 24px.png" alt="arrow"> </button>
+                      <button class="bg-secondary text-light px-6 py-3 rounded-lg flex gap-x-5 mt-5 hover-btn"><span class="text-base font-semibold">Shop Now</span> <img src="./img/icons/Right 24px.png" alt="arrow"> </button>
             </div>
           </div>
         </div>
@@ -131,7 +133,7 @@
             <img class="bg-primary p-[.62rem] rounded-full" src="./img/icons/Right 24px (1).png" alt="right">
           </div>
         </div>
-          <div class="grid-4">
+          <div class="grid grid-cols-1 md:grid-cols-4 justify-between gap-6">
             <div>
               <div class="w-full relative">
                 <img class="w-full" src="./img/Image.png" alt="image" />
@@ -185,7 +187,61 @@
         
           </div>
         </div>
-        <!-- Our PRODUCTS -->
+        <!-- Top categories-->
+        <div class="my-20 ">
+          <div class="arow-container container">
+            <h1 class="arow-title">Top categories</h1>
+            <div class="flex gap-5 items-center">
+              <img src="./img/icons/Arrow.png" alt="left">
+              <img class="bg-primary p-[.62rem] rounded-full" src="./img/icons/Right 24px (1).png" alt="right">
+            </div>
+          </div>
+            <div class="grid grid-cols-4 gap-6 container">
+    <div class=" h-[424px]">
+      <div class="w-full relative">
+        <img class="w-full" src="./img/Image-12.png" alt="">
+        <div class="w-full bg-black opacity-70 text-light p-5 absolute bottom-0 rounded-xl ">
+          <h1 class="text-xl font-semibold">Wing Chair</h1>
+          <p class="text-sm font-normal">3,584 Products</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class=" h-[424px]">
+      <div class="w-full relative">
+        <img class="w-full" src="./img/Image (9).png" alt="">
+        <div class="w-full bg-black opacity-70 text-light p-5 absolute bottom-0">
+          <h1 class="text-xl font-semibold">Wing Chair</h1>
+          <p class="text-sm font-normal">3,584 Products</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class=" h-[424px]">
+      <div class="w-full relative">
+        <img class="w-full" src="./img/Image (10).png" alt="">
+        <div class="w-full bg-black opacity-70 text-light p-5 absolute bottom-0">
+          <h1 class="text-xl font-semibold">Wing Chair</h1>
+          <p class="text-sm font-normal">3,584 Products</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class=" h-[424px]">
+      <div class="w-full relative">
+        <img class="w-full" src="./img/Image (1).png" alt="">
+        <div class="w-full bg-black opacity-70 text-light p-5 absolute bottom-0">
+          <h1 class="text-xl font-semibold">Wing Chair</h1>
+          <p class="text-sm font-normal">3,584 Products</p>
+        </div>
+      </div>
+     
+    </div>
+    </div>
+ 
+          
+            </div>
+                   <!-- Our PRODUCTS -->
         <div class=" container mb-12">
           <div class="text-center">
             <h1 class="font-semibold text-3xl text-dark ">Our Products</h1>
@@ -199,7 +255,7 @@
               </ul>
             </div>
           </div>
-          <div class="grid-4">
+          <div class="grid grid-cols-1 md:grid-cols-4 justify-between gap-6">
             <div>
               <div class="w-full relative">
                 <img class="w-full" src="./img/Image.png" alt="image" />
@@ -383,7 +439,7 @@
               <img class="bg-primary p-[.62rem] rounded-full" src="./img/icons/Right 24px (1).png" alt="right">
             </div>
           </div>
-            <div class="grid-4">
+            <div class="grid grid-cols-4 justify-between gap-6">
               <div>
                 <div class="w-full relative">
                   <img class="w-full" src="./img/Image.png" alt="image" />
@@ -479,8 +535,7 @@
               </label>
               <p class="text-[#029FAE] cursor-pointer">Forget Password</p>
             </div>
-            <button
-              class="w-full bg-[#029FAE] py-[14px] my-5 rounded-[8px] text-white"
+            <button class="w-full bg-[#029FAE] py-[14px] my-5 rounded-[8px] text-white hover-btn"
             >
               Sign In
             </button>
@@ -493,7 +548,7 @@
         <!-- FOOTER -->
         <footer class="">
          <div class="border">
-          <div class="flex justify-between items-start gap-x-10 my-20 container ">
+          <div class="grid grid-cols-4 justify-between items-start gap-x-14 my-20 container ">
             <div >
               <img src="./img/Logo (7).png" alt="image" />
               <p class="w-[350px] mt-6">
@@ -534,7 +589,7 @@
                   id=""
                   placeholder="Your email"
                 />
-                <button class="bg-[#029FAE] px-5 rounded-md text-white">
+                <button class="bg-[#029FAE] px-5 rounded-md text-white hover-btn">
                   Subcribe
                 </button>
               </div>
@@ -553,6 +608,7 @@
             <img class="grayscale" src="./img/Logos.png" alt="image" />
           </div>
         </footer>
+          </div>
       </div>
     </div>
   </body>
