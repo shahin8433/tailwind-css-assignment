@@ -18,26 +18,21 @@
       <div class="font-inter">
         <header>
           <div class="bg-primary w-full">
-            <div
-              class="flex flex-col md:flex-row justify-between items-center py-[20px] container "
-            >
-              <div><img src="./img/Logo (8).png" alt="logo" /></div>
+            <div  class="flex flex-row justify-between items-center py-[20px] container">
+              <div class="w-1/3 "><img src="./img/Logo (8).png" alt="logo" /></div>
               <div class="relative">
-                <input
-                  class="p-[13px] rounded-md w-[413px] text-base"
+                <input class="p-[13px] rounded-md md:w-[413px] text-base hidden md:block "
                   type="text"
                   name=""
                   id=""
                   placeholder="Search here..."
                 />
                 <i
-                  class="fa-solid fa-magnifying-glass absolute top-1/2 right-4 translate-y-[-50%]"
-                ></i>
+                  class="fa-solid fa-magnifying-glass static mt-5 md:mt-0 md:absolute top-1/2 right-4 translate-y-[-50%]"></i>
               </div>
-              <div class="flex gap-x-3 items-center">
+              <div class="flex  gap-x-1 md:gap-x-3 items-center justify-between">
                 <div
-                  class="flex gap-x-2 items-center bg-white py-3 px-4 rounded-lg"
-                >
+                  class="flex  justify-between gap-x-2 items-center bg-white py-3 px-4 rounded-lg">
                   <i class="fa-solid fa-cart-shopping"></i>
                   <p class="text-xs">Cart</p>
                   <p class="bg-secondary rounded-full px-[7px] text-light">2</p>
@@ -53,15 +48,17 @@
           </div>
         </header>
         <nav class="flex justify-between items-center my-3 container ">
-      <div class="flex gap-x-8 relative">
+      <div class="toggle-button flex gap-x-8 relative items-center">
         <button class="flex items-center gap-x-4 border py-2 px-3 md:py-4 md:px-6 rounded-lg bg-gray-50 "> <img class=" md:hidden" src="./img/icons/Menu.png" alt="menu"> <span class="whitespace-nowrap">All Categories</span></button>
-        <ul class="flex flex-col md:flex-row gap-x-8 items-center text-sm absolute md:static top-0 bg-red-200 w-full ">
-          <li class="text-secondary"><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
+        <div class="dropdown-menu bg-primary md:bg-white  w-full absolute md:static top-[54px] invisible md:visible ">
+          <ul class="flex flex-col md:flex-row gap-x-8 items-center text-sm gap-y-5  ">
+            <li class="text-secondary"><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
       </div>
           <div>
             <p class=" text-sm">Contact: <span class="font-semibold text-sm">(808) 555-0111</span></p>
@@ -69,7 +66,7 @@
         </nav>
         <!-- Hero Section -->
       <div class=" rounded-br-full">
-        <div class="  h-[850px]  flex no-repeat bg-center bg-cover px-20" style="background-image: url(./img/BG.png)"
+        <div class="  h-[850px]  w-full flex no-repeat bg-center bg-cover px-20" style="background-image: url(./img/BG.png)"
         >
           <div class="flex items-center container">
             <div class="w-[631px]">
@@ -508,7 +505,7 @@
      </div>
     </div>
         <form action="" class="container my-20">
-          <div class=" shadow-md w-1/3 mx-auto p-5 bg-white rounded-md">
+          <div class=" shadow-md md:w-1/3 mx-auto p-5 bg-white rounded-md">
             <h1
               class="text-center text-[32px] text-[#272343] font-semibold mb-5"
             >
@@ -610,5 +607,8 @@
           </div>
       </div>
     </div>
+
+
+    <script src="./srcits.js"></script>
   </body>
 </html>
